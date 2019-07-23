@@ -1,0 +1,14 @@
+<div *ngIf="user != undefined" >
+
+	<table border="1" >
+		<h2>Tên: {{user.name}}</h2>
+		<p>Tuổi: {{user.age}}</p>
+		<p>Dislike: {{user.dislike}}</p>
+		<p>Like: {{user.like}}</p>
+		<img [src]="user.image" width="200">
+		<br>
+		<button type="button" (click)="DislikeUser(user.id)">Dislike</button>
+		<button type="button" (click)="LikeUser(user.id)">Like</button>
+
+	</table>
+</div>		
